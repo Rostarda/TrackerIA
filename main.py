@@ -78,7 +78,7 @@ while True:
             # --- FILTRO DE "OBJETO PARADO" ---
             # Se o retângulo não se mexer mais de 5 pixels, começa a contar tempo
             if abs(x - last_x) < 5 and abs(y - last_y) < 5:
-                if time.time() - tempo_parado > 5.0: # 5 segundos parado = erro
+                if time.time() - tempo_parado > 5.0: # 5º segundos parado = erro
                     sucesso = False 
             else:
                 tempo_parado = time.time()
